@@ -31,6 +31,7 @@ const CarouselPage: React.FC = () => {
     }, 3000); // Change slide every 3 seconds
 
     return () => clearInterval(interval); // Clean up the interval on component unmount
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentIndex]); // Only reset the interval when the currentIndex changes
 
   return (
