@@ -41,7 +41,7 @@ const Homespgdt = () => {
           </Select>
         </CardContent>
         <CardFooter>
-          <Link href="https://wa.me/+628561514375">
+          <Link href="https://wa.me/+6281286944990">
               <Button type="button">HUBUNGI RUMAH SAKIT</Button>
           </Link>
         </CardFooter>

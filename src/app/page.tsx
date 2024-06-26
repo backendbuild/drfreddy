@@ -6,6 +6,9 @@ import Carousel from "@/landing/carouselPage"
 import Hero from '@/landing/hero'
 import Heroleast from '@/landing/heroleast'
 import Homespgdt from '@/landing/homespgdt'
+import About from '@/landing/about'
+import News from '@/landing/newslay'
+import Videolay from '@/landing/videolay'
 
 const page = () => {
   return (
@@ -14,6 +17,9 @@ const page = () => {
       <Homespgdt />
       <Hero />  
       <Heroleast />
+      <About />
+      <News />
+      <Videolay />
     </div>
   )
 }

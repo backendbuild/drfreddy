@@ -2,7 +2,7 @@ import React from 'react';
 
 const Bottom = () => {
   return (
-    <div className="card container bg-blue-950 rounded-tr-lg rounded-tl-lg h-96 flex">
+    <div className="card container bg-blue-950 rounded-tr-xl rounded-tl-xl h-96 flex mt-8">
       <div className="footer-content flex-grow flex flex-col items-end justify-end text-white p-6">
         {/* Peta menggunakan Google Maps */}
         <div className="map flex-shrink-0 mb-4">

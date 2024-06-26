@@ -21,7 +21,7 @@ const Hero = () => {
                         <CardTitle>KEPALA PUSAT KEDOKTERAN KEPOLISIAN</CardTitle>
                         <CardDescription>Irjen. Pol. Dr. dr. Asep Hendradiana, Sp.An-TI., Subsp.IC(K)., M.Kes.</CardDescription>
                     </CardHeader>
-                    <CardContent className="clamp">
+                    <CardContent className="text-justify">
                         <p>
                         Saya, Irjen. Pol. Dr. dr. Asep Hendradiana, Sp.An-TI., Subsp.IC(K)., M.Kes., dengan bangga mempersembahkan platform ini sebagai wujud komitmen Pusdokkes Polri dalam menyediakan layanan kesehatan berkualitas tinggi bagi anggota Polri dan masyarakat umum. Melalui website ini, kami berupaya untuk memberikan informasi yang komprehensif mengenai berbagai layanan medis, program kesehatan, dan penelitian yang kami laksanakan.
                         Pusdokkes Polri bertekad untuk terus mengembangkan diri dalam bidang kesehatan dengan mengadopsi teknologi terkini dan standar internasional, sehingga dapat memberikan pelayanan yang efektif dan efisien kepada seluruh stakeholder yang kami layani.

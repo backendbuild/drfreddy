@@ -1,13 +1,12 @@
-// carouselPage.tsx
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel" // Adjust the import path as necessary
+} from "@/components/ui/carousel"; // Adjust the import path as necessary
 import Image from 'next/image';
 
 const CarouselPage: React.FC = () => {
@@ -26,14 +25,22 @@ const CarouselPage: React.FC = () => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval); // Clean up the interval on component unmount
+  }, [currentIndex]); // Only reset the interval when the currentIndex changes
+
   return (
-    <div className="m-28">
+    <div className="m-24">
       <Carousel>
         <CarouselContent currentIndex={currentIndex}>
           {images.map((image, index) => (
             <CarouselItem key={index}>
-              <div className="relative w-full h-64">
-                <Image src={image.src} alt={image.alt} layout="fill" objectFit="cover" />
+              <div className="relative flex items-center justify-center">
+                <Image src={image.src} alt={image.alt} width={1200} height={800} objectFit="cover" />
               </div>
             </CarouselItem>
           ))}
