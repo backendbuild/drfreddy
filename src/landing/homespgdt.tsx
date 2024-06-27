@@ -16,6 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from '@/components/ui/button';
+import { Input } from "@/components/ui/input"
 
 const Homespgdt = () => {
   return (
@@ -27,7 +28,9 @@ const Homespgdt = () => {
             Sistem Penanggulangan Gawat Darurat Terpadu (SPGDT) memadukan penanganan gawat darurat mulai dari tingkat pra rumah sakit sampai tingkat rumah sakit dan rujukan antara rumah sakit dengan pendekatan lintas program dan multisektoral.
           </CardDescription>
         </CardHeader>
+        
         <CardContent>
+        <Input className="mb-4" type="PENCARIAN SISTEM RUJUK" placeholder="CARI RUMAH SAKIT DENGAN SISTEM PENANGGULANGAN GAWAT DARURAT TERPADU" />
           <Select>
             <SelectTrigger id="framework">
               <SelectValue placeholder="Select" />

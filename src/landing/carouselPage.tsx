@@ -21,14 +21,23 @@ const CarouselPage: React.FC = () => {
   }, [images.length]);
 
   return (
-    <div className="relative overflow-hidden m-24">
+    <div className="relative overflow-hidden mt-20 md:mt-28">
       <div
         className="flex transition-transform duration-500"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, index) => (
           <div key={index} className="min-w-full flex-shrink-0 flex justify-center items-center">
-            <Image src={image.src} alt={image.alt} width={1200} height={800} objectFit="cover" />
+            <div className="w-full h-auto">
+              <Image 
+                src={image.src} 
+                alt={image.alt} 
+                layout="responsive" 
+                width={1200} 
+                height={800} 
+                objectFit="cover" 
+              />
+            </div>
           </div>
         ))}
       </div>

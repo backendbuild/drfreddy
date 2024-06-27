@@ -2,13 +2,13 @@ import React from 'react';
 
 const Bottom = () => {
   return (
-    <div className="card container bg-blue-950 rounded-tr-xl rounded-tl-xl h-96 flex mt-8">
-      <div className="footer-content flex-grow flex flex-col items-end justify-end text-white p-6">
+    <div className="footer text-base-content bg-blue-950 rounded-tr-sm rounded-tl-sm h-auto flex flex-col mt-8 p-6">
+      <div className="footer-content flex-grow flex flex-col items-start text-white space-y-4 md:flex-row md:items-end md:justify-end md:space-y-0">
         {/* Peta menggunakan Google Maps */}
-        <div className="map flex-shrink-0 mb-4">
+        <div className="map flex-shrink-0 w-full md:w-auto md:mr-4 mb-4 md:mb-0">
           <iframe
             title="Google Maps"
-            width="430"
+            width="100%"
             height="230"
             frameBorder="0"
             style={{ border: 0 }}
@@ -17,7 +17,7 @@ const Bottom = () => {
           />
         </div>
         {/* Informasi lokasi */}
-        <div className="location-info">
+        <div className="location-info w-full md:w-auto">
           <h3 className="font-extrabold">Lokasi Kami</h3>
           <p>Jalan Cipinang</p>
           <p>Provinsi DKI JAKARTA, Jakarta Timur, Kramat Jati, 13510</p>
